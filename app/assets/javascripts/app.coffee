@@ -1,0 +1,1 @@
+bamboo = angular.module('bamboo', [])
