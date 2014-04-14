@@ -9,7 +9,7 @@ before_fork do |server, worker|
     end
 
     defined?(ActiveRecord::Base) and
-      ActiveRecord::Base.connection.dicconnect!
+      ActiveRecord::Base.connection.disconnect!
 end
 
 after_fork do |server, worker|
